@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <title>Fill up te details!</title>
+    <link rel="stylesheet" href="form.css">
+  </head>
+  <body >
+    <header>
+      <div class="hea">
+        <div class="header-left">
+
+          <a href="index.html"><img class="logo" src="/Users/etiagarwal/Desktop/html-lesson/logo.png"></a>
+          <div class="dash">
+          <a href="##" class="About">About Us</a>
+        </div>
+      </div>
+        <div class="header-right">
+
+
+              <a href="login.html" class="login">Log in</a>
+
+        </div>
+      </div>
+    </header>
+    <div class="container">
+<form action="action_page.php">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Create Number of candidates</label>
+
+    </div>
+    <div class="col-75">
+
+      <script type="text/javascript">
+        function createMany(nums){
+	         var str = "";
+           var str1 = "";
+
+	          for(i=0;i<nums;i++){
+
+
+              str += "<label>Enter Name of the candidate:  </label><input type='text'  id='txtNum[]'  /> <br/>";
+
+              document.getElementById("divTxt").innerHTML = str;
+
+	             }
+
+    }
+  </script>
+  <p>
+  <input type="number" id="quantity" name="quantity" min="1" max="100">
+  <center><input type="button" name="button" id="create" value="Create" onclick="createMany(quantity.value);" /></center>
+
+</p>
+
+<div id="divTxt"></div>
+
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+        <label>Enter necessary documents required.</label>
+    </div>
+    <div class="col-75">
+
+      <input type="checkbox" id="Aadhar" name="documents" value="Aadhar">
+  <label for="Aadhar"> Aadhar Card</label><br>
+  <input type="checkbox" id="Driving" name="vehicle2" value="Driving">
+  <label for="Driving"> Driving License</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> Passport</label><br><br>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="doe">Date of Election:</label>
+
+    </div>
+    <div class="col-75">
+      <input type="date" id="doe" name="doe">
+    </div>
+  </div>
+  <div class="row">
+    <center><input type="submit" value="Submit"></center>
+  </div>
+</form>
+</div>
+  </body>
+</html>
